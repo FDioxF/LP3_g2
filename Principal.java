@@ -3,9 +3,7 @@ import java.util.Scanner;
 public class Principal {
 	
 	public static void main(String[] args) {
-		int suma;
 		int vida, rp=0;
-		boolean fl=false;
 		vida=0;
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Numero?");
@@ -16,5 +14,8 @@ public class Principal {
 		for (int i=1; i<=vida; i++)
 			rp +=1;
 		System.out.println("La suma es: "+ rp);
+		
+		for (int i=1; i<=12; i++)
+		System.out.println(vida + " x " + i + " = " + (vida*i));
 	}
 }
