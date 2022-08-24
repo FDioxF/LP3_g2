@@ -1,21 +1,22 @@
 import java.util.Scanner;
 
 public class Principal {
-	
-	public static void main(String[] args) {
-		int vida, rp=0;
-		vida=0;
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Numero?");
-		vida = sc.nextInt();
-		System.out.println("numer� ingresado: "+vida);
-		System.out.println("Hola mundo");
-		
-		for (int i=1; i<=vida; i++)
-			rp +=1;
-		System.out.println("La suma es: "+ rp);
-		
-		for (int i=1; i<=12; i++)
-		System.out.println(vida + " x " + i + " = " + (vida*i));
-	}
+
+    public static void main(String[] args) {
+        int vida, rp = 0;
+        boolean fl = false;
+        vida = 0;
+        Scanner sc = new Scanner(System.in);
+        do {
+            vida++;
+            System.out.println("Vida:" + vida + "\t¿Cual es el número secreto?");
+            rp = sc.nextInt();
+            if (rp == 1234)
+                fl = true;
+        } while (vida < 3 && !fl);
+        if (fl == true)
+            System.out.println("Adivinaste!!!!!");
+        else
+            System.out.println("ups, perdiste...");
+    }
 }
