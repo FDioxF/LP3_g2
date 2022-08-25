@@ -14,9 +14,11 @@ public class Principal {
             if (rp == 1234)
                 fl = true;
         } while (vida < 3 && !fl);
-        if (fl == true)
+        if (fl == true) {
             System.out.println("Adivinaste!!!!!");
-        else
+            System.out.println("Ganaste un premio:");
+            System.out.println("Un viaje a Dysney Land");
+        } else
             System.out.println("ups, perdiste...");
     }
 }
